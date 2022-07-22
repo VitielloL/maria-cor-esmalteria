@@ -64,5 +64,5 @@
 @endsection
 
 @section('scripts')
-    <script type="text/javascript" src='{{asset('/js/login.js')}}'></script>
+    <script src="{{mix("static/js/login.js")}}"></script>
 @endsection
