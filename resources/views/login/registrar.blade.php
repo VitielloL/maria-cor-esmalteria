@@ -1,7 +1,7 @@
 @extends('layout.login')
 
 @section('conteudo')
-    <div class="login-center; background-color:#f4d368">
+    <div class="login-center">
         <div class="container">
             <div class="justify-content-center row" >
                 <div class="mb-5 col-md-5 col-xl-4 card" style=" box-shadow: 1px 5px 30px rgb(185, 77, 31);">
