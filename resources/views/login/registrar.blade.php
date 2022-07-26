@@ -1,7 +1,7 @@
 @extends('layout.login')
 
 @section('conteudo')
-    <div class="login-center">
+    <div class="login-center; background-color:#f4d368">
         <div class="container">
             <div class="justify-content-center row" >
                 <div class="mb-5 col-md-5 col-xl-4 card" style=" box-shadow: 1px 5px 30px rgb(185, 77, 31);">
@@ -64,5 +64,5 @@
 @endsection
 
 @section('scripts')
-    <script src="{{mix("static/js/login.js")}}"></script>
+    <script src="{{mix("js/login.js")}}"></script>
 @endsection
