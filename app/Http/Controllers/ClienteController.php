@@ -1,14 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\ClienteModel;
 use Illuminate\Http\Request;
 
 class ClienteController extends Controller
 {
     public function index()
     {
-        return view('cliente.index');
+        $dados = ClienteModel::all();
+        return view('cliente.index')->with('dados', $dados);
     }
 
     public function create()
