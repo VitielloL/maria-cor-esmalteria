@@ -61,7 +61,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="{{ url('home') }}" class="brand-link">
+    <a href="{{route('cliente')}}" class="brand-link">
       <img src={{asset("storage/logo.jpg")}} alt="Maria Cor Esmalteria" class="brand-image img-circle elevation-3" style="opacity:1.8">
       <span class="brand-text font-weight-light"><i>Maria Cor Esmalteria</i></span>
     </a>
