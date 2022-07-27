@@ -76,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="text-left">
+            <div class="mt-4 text-left">
                 <button type="submit" class="btn btn-success text-white">Salvar</button>
                 <a href="{{route('cliente')}}" class="btn btn-secondary">Voltar</a>
             </div>

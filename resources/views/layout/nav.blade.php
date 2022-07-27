@@ -116,7 +116,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item  menu-open">
-                <a href='' class="nav-link">
+                <a href='{{route('cliente.novo')}}' class="nav-link">
                   <i class="nav-icon fas fa-user-plus"></i>
                   <p>Novo Cliente</p>
                 </a>
