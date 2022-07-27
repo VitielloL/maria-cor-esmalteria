@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\ClienteModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ClienteController extends Controller
 {
@@ -25,12 +26,16 @@ class ClienteController extends Controller
 
     public function create()
     {
-        //
+        return view('cliente.create');
     }
 
     public function store(Request $request)
     {
-        //
+        $dados = $request->all();
+
+        ClienteModel::create($dados);
+
+        return redirect()->route('cliente');
     }
 
     public function edit($id)
@@ -45,6 +50,10 @@ class ClienteController extends Controller
 
     public function destroy($id)
     {
-        //
+        $dado = ClienteModel::where('id', $id)->get();
+
+        DB::delete('DELETE FROM cliente WHERE id = ?', [$id]);
+
+        return redirect()->route('cliente');
     }
 }

@@ -5,9 +5,7 @@
         @if (!empty($dado))
             @foreach ( $dado as $d )
 
-            <div class="d-flex">
-                <h2 class="fw-bold fst-italic text-uppercase" style="margin-bottom: 15px; padding-top:15px;">{{$d->nome}}</h2>
-            </div>
+            <h2 class="fw-bold fst-italic" style="margin-bottom: 15px;">{{$d->nome}}</h2>
 
             <p class="text-center table-warning fw-bold fst-italic">Dados Cadastrais</p>
 
