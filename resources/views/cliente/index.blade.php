@@ -5,7 +5,7 @@
         <div class="d-flex justify-content-between">
             <h2 class="pl-5 fst-italic fw-bold">Lista de Clientes</h2>
             <div class="pr-5">
-                <a href='{{route('cliente.novo')}}' class='btn btn-success' style="height: 40px;"><i class="fas fa-plus mr-1"></i> Cadastrar</a>
+                <a href='{{route('cliente')}}' class='btn btn-success' style="height: 40px;"><i class="fas fa-plus mr-1"></i> Cadastrar</a>
             </div>
         </div>
 

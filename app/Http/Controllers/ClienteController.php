@@ -12,17 +12,23 @@ class ClienteController extends Controller
         return view('cliente.index')->with('dados', $dados);
     }
 
+    public function show($id)
+    {
+        $dado = ClienteModel::where('id', $id)->get();
+
+        if (!empty($dado)) {
+            return view('cliente.show')->with('dado', $dado);
+        } else {
+            return redirect()->route('cliente');
+        }
+    }
+
     public function create()
     {
         //
     }
 
     public function store(Request $request)
-    {
-        //
-    }
-
-    public function show($id)
     {
         //
     }
