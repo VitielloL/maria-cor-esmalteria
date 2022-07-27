@@ -5,7 +5,7 @@
         @if (!empty($dado))
             @foreach ( $dado as $d )
 
-            <h2 class="fw-bold fst-italic" style="margin-bottom: 15px;">{{$d->nome}}</h2>
+            <h2 class="fw-bold fst-italic" style="margin-bottom:15px;">{{$d->nome}}</h2>
 
             <p class="text-center table-warning fw-bold fst-italic">Dados Cadastrais</p>
 
