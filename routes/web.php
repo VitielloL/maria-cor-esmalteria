@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\ColaboradorController;
 
 Route::get('/', [LoginController::class, 'index'])->name('login');
 Route::post('/auth',[LoginController::class,'auth'])->name('auth.user');
@@ -12,6 +13,7 @@ Route::get('/registrar', [LoginController::class, 'registrar'])->name('registrar
 Route::post('/logout',[LoginController::class,'logout'])->name('logout');
 
 Route::middleware('auth')->group(function () {
+
     Route::get('/cliente', [ClienteController::class, 'index'])->name('cliente');
     Route::get('/cliente/novo', [ClienteController::class, 'create'])->name('cliente.novo');
     Route::post('/cliente/store', [ClienteController::class, 'store'])->name('cliente.store');
@@ -19,4 +21,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/cliente/editar/{id}', [ClienteController::class, 'edit'])->name('cliente.editar');
     Route::put('/cliente/update/{id}', [ClienteController::class, 'update'])->name('cliente.update');
     Route::get('/cliente/remover/{id}', [ClienteController::class, 'destroy'])->name('cliente.remover');
+
+    Route::get('/colaborador', [ColaboradorController::class, 'index'])->name('colaborador');
+    Route::get('/colaborador/novo', [ColaboradorController::class, 'create'])->name('colaborador.novo');
+    Route::post('/colaborador/store', [ColaboradorController::class, 'store'])->name('colaborador.store');
+    Route::get('/colaborador/{id}', [ColaboradorController::class, 'show'])->name('colaborador.show');
+    Route::get('/colaborador/editar/{id}', [ColaboradorController::class, 'edit'])->name('colaborador.editar');
+    Route::put('/colaborador/update/{id}', [ColaboradorController::class, 'update'])->name('colaborador.update');
+    Route::get('/colaborador/remover/{id}', [ColaboradorController::class, 'destroy'])->name('colaborador.remover');
+
 });

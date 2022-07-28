@@ -6,12 +6,12 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class popula_cliente extends Seeder
+class popula_colaborador extends Seeder
 {
     public function run()
     {
-        DB::table('cliente')->insert([
-            'cpf' => '12345678900',
+        DB::table('colaborador')->insert([
+            'cpf' => '02345678901',
             'nome' => 'João da Silva',
             'data_nascimento' => '01/01/2000',
             'telefone' => '11-1111-1111',
