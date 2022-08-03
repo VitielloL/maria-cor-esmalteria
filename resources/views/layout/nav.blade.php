@@ -164,13 +164,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href='' class="nav-link">
+                <a href='{{route('material.novo')}}' class="nav-link">
                   <i class="nav-icon fas fa-plus-square"></i>
                   <p>Novo Material</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href='' class="nav-link">
+                <a href='{{route('material')}}' class="nav-link">
                   <i class="nav-icon fas fa-list-alt"></i>
                   <p>Lista dos Materiais</p>
                 </a>
