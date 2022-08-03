@@ -13,7 +13,6 @@ Route::get('/registrar', [LoginController::class, 'registrar'])->name('registrar
 Route::post('/logout',[LoginController::class,'logout'])->name('logout');
 
 Route::middleware('auth')->group(function () {
-
     Route::get('/cliente', [ClienteController::class, 'index'])->name('cliente');
     Route::get('/cliente/novo', [ClienteController::class, 'create'])->name('cliente.novo');
     Route::post('/cliente/store', [ClienteController::class, 'store'])->name('cliente.store');
@@ -30,4 +29,13 @@ Route::middleware('auth')->group(function () {
     Route::put('/colaborador/update/{id}', [ColaboradorController::class, 'update'])->name('colaborador.update');
     Route::get('/colaborador/remover/{id}', [ColaboradorController::class, 'destroy'])->name('colaborador.remover');
 
+    Route::get('/material', [MaterialController::class, 'index'])->name('material');
+    Route::get('/material/novo', [MaterialController::class, 'create'])->name('material.novo');
+    Route::post('/material/store', [MaterialController::class, 'store'])->name('material.store');
+    Route::get('/material/{id}', [MaterialController::class, 'show'])->name('material.show');
+    Route::get('/material/editar/{id}', [MaterialController::class, 'edit'])->name('material.editar');
+    Route::put('/material/update/{id}', [MaterialController::class, 'update'])->name('material.update');
+    Route::get('/material/remover/{id}', [MaterialController::class, 'destroy'])->name('material.remover');
+
 });
+
