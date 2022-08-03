@@ -4,9 +4,7 @@
     <div class="pt-5 pl-3 pr-3">
         @if (!empty($dado))
             @foreach ( $dado as $d )
-
             <h2 class="fw-bold fst-italic" style="margin-bottom:15px;">{{$d->nome}}</h2>
-
             <p class="text-center table-warning fw-bold fst-italic">Dados Cadastrais</p>
 
             <div class="form-group row">
