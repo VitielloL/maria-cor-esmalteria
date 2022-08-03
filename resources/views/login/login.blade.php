@@ -6,7 +6,7 @@
             <div class="justify-content-center row" >
                 <div class="mb-5 col-md-5 col-xl-4 card" style=" box-shadow: 1px 5px 30px rgb(185, 77, 31);">
                     @if ($errors->any())
-                        <div class="alert alert-danger">
+                        <div class="alert alert-danger mt-1">
                             <ul>
                                 @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
@@ -15,7 +15,7 @@
                         </div>
                     @endif
                     @if (session('danger'))
-                        <div class="alert alert-danger">
+                        <div class="alert alert-danger mt-1">
                             {{ session('danger') }}
                         </div>
                     @endif
