@@ -9,7 +9,7 @@ class popula_material extends Seeder
 {
     public function run()
     {
-        DB::table('colaborador')->insert([
+        DB::table('material')->insert([
             'titulo' => 'esmalte vermelho do naruto',
             'valor' => 150,
             'descricao' => 'muito usado pelo naruto'
