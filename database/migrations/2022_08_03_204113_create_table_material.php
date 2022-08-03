@@ -12,6 +12,7 @@ return new class extends Migration
             $table->id();
             $table->string('titulo')->nullable();
             $table->decimal('valor')->nullable();
+            $table->decimal('quantidade')->nullable();
             $table->string('descricao')->nullable();
             $table->timestamps();
         });

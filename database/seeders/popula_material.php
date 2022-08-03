@@ -12,6 +12,7 @@ class popula_material extends Seeder
     {
         DB::table('material')->insert([
             'titulo' => 'esmalte vermelho do naruto',
+            'quantidade' => 0,
             'valor' => 150,
             'descricao' => 'muito usado pelo naruto'
         ]);
