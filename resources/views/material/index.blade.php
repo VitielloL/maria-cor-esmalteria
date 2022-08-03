@@ -14,8 +14,8 @@
                 <thead class="table-warning">
                     <tr>
                         <td>Título</td>
-                        <td>Quantidade</td>
                         <td>Valor</td>
+                        <td>Quantidade</td>
                         <td>Descrição</td>
                         <td>Ações</td>
                     </tr>
@@ -32,7 +32,21 @@
                         <tr>
                             <td style="vertical-align:middle">{{$dado->titulo}}</td>
                             <td style="vertical-align:middle">{{$dado->valor}}</td>
-                            <td style="vertical-align:middle">{{$dado->quantidade}}</td>
+                            <td>
+                                <form action="<?= url('/material/update',['id' => $dado->id]);?>" method="post">
+                                    @csrf
+                                    @method('PUT')
+                                    <div class="d-flex">
+                                        <div class="d-flex form-group">
+                                                <input type="hidden" class="form-control" id="titulo" name="titulo" value="{{$dado->titulo}}">
+                                                <input type="hidden" class="form-control" id="valor" name="valor" value="{{$dado->valor}}">
+                                                <input type="number" class="form-control" id="quantidade" name="quantidade" value="{{$dado->quantidade}}">
+                                                <input type="hidden" class="form-control w-65" style="vertical-align:middle;" id="descricao" name="descricao" value="{{$dado->descricao}}">
+                                                <button type="submit" class="btn btn-success text-white ml-2"><i class="fas fa-check"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
                             <td style="vertical-align:middle">{{$dado->descricao}}</td>
                             <td>
                                 <div class="d-flex">
