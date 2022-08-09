@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\ColaboradorController;
 use App\Http\Controllers\MaterialController;
+use App\Http\Controllers\ServicoController;
 
 Route::get('/', [LoginController::class, 'index'])->name('login');
 Route::post('/auth',[LoginController::class,'auth'])->name('auth.user');
@@ -38,5 +39,12 @@ Route::middleware('auth')->group(function () {
     Route::put('/material/update/{id}', [MaterialController::class, 'update'])->name('material.update');
     Route::get('/material/remover/{id}', [MaterialController::class, 'destroy'])->name('material.remover');
 
-});
+    Route::get('/servico', [ServicoController::class, 'index'])->name('servico');
+    Route::get('/servico/novo', [ServicoController::class, 'create'])->name('servico.novo');
+    Route::post('/servico/store', [ServicoController::class, 'store'])->name('servico.store');
+    Route::get('/servico/{id}', [ServicoController::class, 'show'])->name('servico.show');
+    Route::get('/servico/editar/{id}', [ServicoController::class, 'edit'])->name('servico.editar');
+    Route::put('/servico/update/{id}', [ServicoController::class, 'update'])->name('servico.update');
+    Route::get('/servico/remover/{id}', [ServicoController::class, 'destroy'])->name('servico.remover');
 
+});
