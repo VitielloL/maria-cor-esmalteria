@@ -2,7 +2,7 @@
 
 @section('conteudo')
     <div class="pt-5 pr-3 pl-3">
-        <h2 class="fw-bold fst-italic" style="margin-bottom:15px;"> Editar Usuário </h2>
+        <h2 class="fw-bold fst-italic" style="margin-bottom:15px;"> Editar Cliente </h2>
 
         <form  action="<?= url('/cliente/update',['id' => $dado->id]);?>" method="post">
             @csrf

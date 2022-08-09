@@ -5,7 +5,7 @@
         @if (!empty($dado))
             @foreach ( $dado as $d )
                 <h2 class="fw-bold fst-italic" style="margin-bottom:15px;">{{$d->titulo}}</h2>
-                <p class="text-center table-warning fw-bold fst-italic">Dados Material</p>
+                <p class="text-center table-warning fw-bold fst-italic">Dados do Material</p>
 
                     <div class="form-group row">
                         <div class="col-md-1">

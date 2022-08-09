@@ -7,7 +7,7 @@
         <form action='{{route('material.store')}}' method="POST">
             @csrf
 
-            <p class="text-center table-warning fw-bold fst-italic">Dados Materiais</p>
+            <p class="text-center table-warning fw-bold fst-italic">Dados do Material</p>
 
             <div class="form-group row">
                 <div class="col-md-5">

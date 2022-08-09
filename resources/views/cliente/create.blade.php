@@ -2,7 +2,7 @@
 
 @section('conteudo')
     <div class="pt-5 pr-3 pl-3">
-        <h2 class="fw-bold fst-italic" style="margin-bottom:15px;"> Novo Usuário </h2>
+        <h2 class="fw-bold fst-italic" style="margin-bottom:15px;"> Novo Cliente </h2>
 
         <form action='{{route('cliente.store')}}' method="POST">
             @csrf
