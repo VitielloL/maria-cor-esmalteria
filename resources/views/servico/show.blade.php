@@ -7,6 +7,10 @@
                 <h2 class="fw-bold fst-italic" style="margin-bottom:15px;">{{$d->titulo}}</h2>
                 <p class="text-center table-warning fw-bold fst-italic">Dados do Serviço</p>
                     <div class="form-group row">
+                        <div class="col-md-10">
+                            <label class="form-label" for="descricao">Descrição: </label>
+                            <input type="text" class="form-control" id="descricao" value="{{$d->descricao}}" disabled>
+                        </div>
                         <div class="col-md-1">
                             <label class="form-label" for="valor">Valor: </label>
                             <input type="text" class="form-control" id="valor" value="{{$d->valor}}" disabled>

@@ -12,7 +12,8 @@ class popula_servico extends Seeder
     {
         DB::table('servico')->insert([
             'titulo' => 'fazer sombrancelha',
-            'valor' => 30
+            'valor' => 30,
+            'descricao' => 'sombrancelha de tanajura nao!!'
         ]);
     }
 }

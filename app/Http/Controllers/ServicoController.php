@@ -54,6 +54,7 @@ class ServicoController extends Controller
 
         $dado->titulo = $request->titulo;
         $dado->valor = $request->valor;
+        $dado->descricao = $request->descricao;
 
         $dado->save();
 

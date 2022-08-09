@@ -15,6 +15,10 @@
                     <label class="form-label" for="titulo">Título: </label>
                     <input type="text" class="form-control" id="titulo" name="titulo" value="{{$dado->titulo}}">
                 </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="descricao">Descrição: </label>
+                    <input type="text" class="form-control" id="descricao" value="{{$dado->descricao}}">
+                </div>
                 <div class="col-md-1">
                     <label class="form-label" for="valor">Valor: </label>
                     <input type="number" class="form-control" id="valor" name="valor" value="{{$dado->valor}}">

@@ -10,9 +10,13 @@
             <p class="text-center table-warning fw-bold fst-italic">Dados do Serviço</p>
 
             <div class="form-group row">
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <label class="form-label" for="titulo">Título: </label>
                     <input type="text" class="form-control" id="titulo" name="titulo">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="descricao">Descrição: </label>
+                    <input type="text" class="form-control" id="descricao" name="descricao">
                 </div>
                 <div class="col-md-1">
                     <label class="form-label" for="valor">Valor: </label>
