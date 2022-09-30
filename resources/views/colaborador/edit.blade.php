@@ -28,7 +28,7 @@
             <div class="form-group row">
                 <div class="col-md-2">
                     <label class="form-label" for="data_nascimento">Data Nascimento: </label>
-                    <input type="text" class="form-control" id="data_nascimento" name="data_nascimento" value="{{date('d-m-Y', strtotime($dado->data_nascimento))}}">
+                    <input type="date" class="form-control" id="data_nascimento" name="data_nascimento" value="{{date('d-m-Y', strtotime($dado->data_nascimento))}}">
                 </div>
                 <div class="col-md-3">
                     <label class="form-label" for="telefone">Telefone: </label>
