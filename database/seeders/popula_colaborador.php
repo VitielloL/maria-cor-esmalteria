@@ -13,7 +13,7 @@ class popula_colaborador extends Seeder
         DB::table('colaborador')->insert([
             'cpf' => '02345678901',
             'nome' => 'João da Silva',
-            'data_nascimento' => '01/01/2000',
+            'data_nascimento' => '1996-04-07 00:00:00.000000',
             'telefone' => '11-1111-1111',
             'celular' => '11-1111-1111',
             'email' => 'opaitestatudo@gmail.com',

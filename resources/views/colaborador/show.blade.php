@@ -18,7 +18,7 @@
                 </div>
                 <div class="col-md-3">
                     <label class="form-label" for="data_nascimento">Data Nascimento: </label>
-                    <input type="text" class="form-control" id="data_nascimento" value="{{$d->data_nascimento}}" disabled>
+                    <input type="text" class="form-control" id="data_nascimento" value="{{date('d-m-Y', strtotime($d->data_nascimento))}}" disabled>
                 </div>
             </div>
 

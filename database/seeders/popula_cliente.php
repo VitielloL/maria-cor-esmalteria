@@ -8,12 +8,13 @@ use Illuminate\Support\Facades\DB;
 
 class popula_cliente extends Seeder
 {
+
     public function run()
     {
         DB::table('cliente')->insert([
             'cpf' => '12345678900',
             'nome' => 'João da Silva',
-            'data_nascimento' => '01/01/2000',
+            'data_nascimento' => '1996-04-07 00:00:00.000000',
             'telefone' => '11-1111-1111',
             'celular' => '11-1111-1111',
             'email' => 'opaitestatudo@gmail.com',

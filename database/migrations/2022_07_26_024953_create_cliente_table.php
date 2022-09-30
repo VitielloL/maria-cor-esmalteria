@@ -9,7 +9,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('cliente', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('cpf')->unique();
             $table->string('nome');
             $table->date('data_nascimento')->nullable();
