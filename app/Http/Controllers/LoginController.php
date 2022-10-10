@@ -13,7 +13,8 @@ class LoginController extends Controller
         return view('login.login');
     }
 
-    public function registrar(){
+    public function registrar()
+    {
         return view('login.registrar');
     }
 
