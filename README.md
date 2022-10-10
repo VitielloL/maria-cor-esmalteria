@@ -2,8 +2,6 @@
 
 Sistema de gerenciamento de uma esmalteria (loja).
 
-<br/>
-
 **Tecnologias utilizadas:**
 
 * PHP 8.1.7
