@@ -31,12 +31,12 @@
 
                         <div class="mt-3 mb-3 form-floating">
                             <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email"  required >
-                            <label for="username" class="form-label">Digite seu email</label>
+                            <label for="username" class="form-label text-secondary">Digite seu email</label>
                         </div>
 
                         <div class="mb-3 form-floating">
                             <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha" required>
-                            <label for="password" class="form-label">Digite sua senha</label>
+                            <label for="password" class="form-label text-secondary">Digite sua senha</label>
                         </div>
 
                         <button type="submit" class="w-100 mb-1 btn btn-primary btn-lg fst-italic">
@@ -45,7 +45,7 @@
                     </form>
 
                     <div class="d-flex justify-content-center align-itens-center mb-3">
-                        <a class="card-link red-link" href="{{route('registrar')}}">Cadastre-se</a>
+                        <a class="text-decoration-none" style="color:rgb(185, 77, 31);" href="{{route('registrar')}}"><h4>Cadastre-se!!</h4></a>
                     </div>
                 </div>
             </div>

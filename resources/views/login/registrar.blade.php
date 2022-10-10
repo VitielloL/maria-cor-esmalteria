@@ -31,22 +31,22 @@
 
                         <div class="mt-3 mb-3 form-floating">
                             <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome"  required >
-                            <label for="username" class="form-label">Digite seu nome</label>
+                            <label for="username" class="form-label text-secondary">Digite seu nome</label>
                         </div>
 
                         <div class="mt-3 mb-3 form-floating">
                             <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email"  required >
-                            <label for="username" class="form-label">Digite seu email</label>
+                            <label for="username" class="form-label text-secondary">Digite seu email</label>
                         </div>
 
                         <div class="mb-3 form-floating">
                             <input type="password" class="form-control" id="pass1" name="password" placeholder="Digite sua senha" required>
-                            <label for="password" class="form-label">Digite sua senha</label>
+                            <label for="password" class="form-label text-secondary">Digite sua senha</label>
                         </div>
 
                         <div class="mt-3 mb-3 form-floating">
                             <input type="password" class="form-control" id="pass2" name="password" placeholder="Repita a Senha" required>
-                            <label for="username" class="form-label">Repita sua senha</label>
+                            <label for="username" class="form-label text-secondary">Repita sua senha</label>
                         </div>
 
                         <button type="submit" id="registrar" href='{{route('login')}}' class="w-100 mb-1 btn btn-primary btn-lg fst-italic">
@@ -55,7 +55,7 @@
                     </form>
 
                     <div class="d-flex justify-content-center align-itens-center mb-3">
-                        <a class="card-link red-link" href='{{route('login')}}'>Já tem cadastro? Entre agora!</a>
+                        <a class="text-decoration-none" style="color:rgb(185, 77, 31);" href='{{route('login')}}'><h4>Já tem cadastro? Entre agora!</h4></a>
                     </div>
                 </div>
             </div>
