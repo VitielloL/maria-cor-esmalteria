@@ -9,6 +9,7 @@
         <!--CSS-->
         <link rel="stylesheet" type="text/css" href={{asset('css/bootstrap/bootstrap.min.css')}}>
         <link rel="stylesheet" type="text/css" href={{asset('css/app.css')}}>
+        <link rel="icon" type="image/png" href="{{ asset('storage/logo.jpg') }}" sizes="16x16" />
     </head>
 
     <body>

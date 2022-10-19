@@ -15,6 +15,7 @@
   <link rel="stylesheet" href={{asset('puglins/overlayScrollbars/css/OverlayScrollbars.min.css')}}>
   <!-- Theme style -->
   <link rel="stylesheet" type="text/css" href={{asset('dist/css/adminlte.min.css')}}>
+  <link rel="icon" type="image/png" href="{{ asset('storage/logo.jpg') }}" sizes="16x16" />
 </head>
 <body class="hold-transition light-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
