@@ -12,7 +12,7 @@ class popula_user extends Seeder
     {
         DB::table('users')->insert([
             'name' => 'desenvolvedor',
-            'email' => 'desenvolvimento@crescersci.com.br',
+            'email' => 'dev@gmail.com',
             'password' => bcrypt('123456')
         ]);
     }
