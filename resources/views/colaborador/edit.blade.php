@@ -83,3 +83,7 @@
         </form>
     </div>
 @endsection
+
+@section('scripts')
+    <script src="{{mix("js/jqueryMask-cep-pessoa.js")}}"></script>
+@endsection

@@ -13,6 +13,7 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/login.js', 'public/js/login.js')
+    .js('resources/js/jqueryMask-cep-pessoa.js', 'public/js/jqueryMask-cep-pessoa.js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);
